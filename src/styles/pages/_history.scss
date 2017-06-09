@@ -1,0 +1,32 @@
+.page.history {
+  header {
+
+      .background {
+          background: url(vintage-illustration-mod.jpg) center center no-repeat;
+          background-size: cover;
+      }
+
+  }
+  section.centered-with-image {
+      .inner::after {
+          background: url(comet-logo-vintage.jpg) center center no-repeat;
+          background-size: contain;
+          width: 200px;
+          margin-left: -100px;
+      }
+  }
+  section.gallery {
+      .image-01 {
+          background: url(vintage-mag-cover-mod.jpg) center center no-repeat;
+          background-size: cover;
+      }
+  }
+  section.side-by-side {
+      .image {
+          height: 480px;
+          background: url(ad-53-clean.jpg) center center no-repeat;
+          background-size: contain;
+      }
+
+	}
+}

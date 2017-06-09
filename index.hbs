@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vintage Comet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+
+
+    <!-- @echo ga_id -->
+    <!-- @exclude -->
+    <script>window.gaid = 'UA-100033422-1';</script>
+    <!-- @endexclude -->
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    
+    if (window.device && window.device.uuid) {
+      window.ga('create', {
+        trackingId: window.gaid,
+        'storage': 'none',
+        'cookieDomain': 'none',
+        'clientId': window.device.uuid
+      });
+    } else {
+      window.ga('create', {
+        trackingId: window.gaid
+      });
+    }
+    
+    //window.ga_debug = {trace: true};
+    window.ga('set', 'hostname', 'vintagecomet.com');
+    window.ga('set', 'checkProtocolTask', function(data) {
+      data.set('location', 'https://www.vintagecomet.com');
+    });
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+</body>
+</html>

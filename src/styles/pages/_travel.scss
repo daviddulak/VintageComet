@@ -1,0 +1,37 @@
+.page.travel {
+  .hero-unit {
+    margin-top: -100px;
+  }
+  header {
+
+        .background {
+            background: url(smokies.jpg) bottom center no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    section.centered-with-image {
+      .inner::after {
+          background: url(vintage-mag-mod.jpg) center center no-repeat;
+          background-size: contain;
+          width: 200px;
+          height: 85px;
+          margin-left: -100px;
+      }
+  }
+  section.gallery {
+      .image-01 {
+          background: url(us-map.svg) center center no-repeat;
+          background-size: contain;
+      }
+  }
+  section.side-by-side {
+      .image {
+          height: 480px;
+          background: url(fall-trip.jpg) center center no-repeat;
+          background-size: contain;
+      }
+
+	}
+}

@@ -1,0 +1,16 @@
+.topbar nav {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    a {
+        margin-right: 24px;
+        color: rgba(#ffffff, .5);
+        font-weight: 500;
+        &:hover {
+        	color: rgba(#ffffff, 1);
+        }
+    }
+    a.active {
+        color: rgba(#ffffff, 1);
+    }
+}
