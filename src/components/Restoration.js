@@ -76,7 +76,35 @@ export default class Restoration extends Component {
 								Restoration
 							</div>
 
-							<div className="timeline-item item-01 left-item road-ready">
+							<div className="timeline-item item-01 left-item exterior-before">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Exterior Before
+										</div>
+										<div className="description">
+											Here is a shot of the exterior before we started the project.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item right-item interior-before">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Interior Before
+										</div>
+										<div className="description">
+											Here is a shot of the interior before we started the project.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item left-item road-ready">
 								<div className="item-inner">
 									<div className="image"></div>
 									<div className="content">
@@ -114,7 +142,35 @@ export default class Restoration extends Component {
 										</div>
 										<div className="description">
 											We took the bare trailer to a company that sand blasted the entire trailer and 
-											coated it with epoxy paint.  We also rebuilt the wheel wells to gain a few more inches of 
+											coated it with epoxy paint.  
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item right-item reinforce">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Reinforce
+										</div>
+										<div className="description">
+											We reinforced the walls plywood blocks.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item left-item wheelwell">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Wheel Well
+										</div>
+										<div className="description">
+											We also rebuilt the wheel wells to gain a few more inches of 
 											storage.  We used a farm barrel to create a protective barrier over the wood.
 										</div>
 									</div>
@@ -254,6 +310,108 @@ export default class Restoration extends Component {
 									</div>
 								</div>
 							</div>
+
+							<div className="timeline-item left-item tounge-box">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Storage Box
+										</div>
+										<div className="description">
+											Originally we wanted to build a box on the tounge as a housing for the AC, but sadly it did 
+											not have enough ventilation for the AC to function properly.  As a result, we converted it to storage.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item right-item storage">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Storage
+										</div>
+										<div className="description">
+											We used the 12v DC circuits and pressure switches to light each of the storage areas with LED tape lighting.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item left-item polish">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Polish
+										</div>
+										<div className="description">
+											To polish, we had to strip away the galvanized paint, sand with high grit and polish with a cotton cutting wheel. 
+											We started the process ourselves and then decided to pay to have it done.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item right-item details">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Details
+										</div>
+										<div className="description">
+											We refurbished the original lighting and my mom sewed new curtains for the windows.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item left-item door">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Door Rebuild
+										</div>
+										<div className="description">
+											The front door had to be completely rebuilt because of all the rot.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item right-item taillights">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Tail Lights
+										</div>
+										<div className="description">
+											We refurbished the original tail lights and used LED replacement bulbs.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="timeline-item left-item testrun">
+								<div className="item-inner">
+									<div className="image"></div>
+									<div className="content">
+										<div className="title">
+											Test Run
+										</div>
+										<div className="description">
+											To test everything out we went over to Mckinney Falls state park which is only a few 
+											miles from the house
+										</div>
+									</div>
+								</div>
+							</div>
+
 
 						</div>
 					</section>

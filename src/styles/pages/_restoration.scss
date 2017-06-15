@@ -33,6 +33,16 @@
 
     section.history {
         .timeline-item {
+            &.exterior-before .image {
+                background: url(IMG_0497.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.interior-before .image {
+                background: url(IMG_0156.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
             &.road-ready .image {
                 background: url(IMG_0567.jpg) center center no-repeat;
                 background-size: cover;
@@ -46,6 +56,16 @@
             &.foundation .image {
                 background: url(IMG_0258.jpg) center center no-repeat;
                 height: 600px;
+                background-size: cover;
+            }
+            &.wheelwell .image {
+                background: url(IMG_0141.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.reinforce .image {
+                background: url(IMG_0579.jpg) center center no-repeat;
+                //height: 600px;
                 background-size: cover;
             }
             &.wall-rebuild .image {
@@ -90,6 +110,41 @@
             }
             &.insulation .image {
                 background: url(IMG_0661.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.tounge-box .image {
+                background: url(IMG_0037.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.storage .image {
+                background: url(IMG_0118.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.polish .image {
+                background: url(IMG_0512.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.details .image {
+                background: url(IMG_0594.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.door .image {
+                background: url(IMG_0598.jpg) center center no-repeat;
+                height: 600px;
+                background-size: cover;
+            }
+            &.taillights .image {
+                background: url(IMG_0410.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            &.testrun .image {
+                background: url(IMG_0430.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
