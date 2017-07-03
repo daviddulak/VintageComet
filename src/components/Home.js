@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
+import {Helmet} from "react-helmet";
 
 @inject("store")
 @observer
@@ -17,6 +18,10 @@ export default class Home extends Component {
 		const store = this.store;
 		return (
 			<div className="page home">
+				<Helmet>
+					<title>Vintage 1953 Comet Trailer</title>
+					<meta name="description" content="This is the story of one 1953 Comet Trailer, it's history, the restoration process, and where it's going." />
+				</Helmet>
 				<header>
 					<div className="hero-unit">
 						<h1>Clementine</h1>

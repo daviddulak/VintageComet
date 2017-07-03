@@ -1,5 +1,5 @@
 .page.restoration {
-  header {
+    header {
 
         .background {
             background: url(david-camper.jpg) top center no-repeat;
@@ -7,7 +7,7 @@
         }
 
     }
-  section.centered-with-image {
+    section.centered-with-image {
       .inner::after {
           background: url(comet-logo.svg) center center no-repeat;
           background-size: contain;
@@ -15,136 +15,379 @@
           height: 85px;
           margin-left: -100px;
       }
-  }
-  section.gallery {
-      .image-01 {
+    }
+    section.gallery {
+      .first {
           background: url(finishes.jpg) center center no-repeat;
           background-size: cover;
       }
-  }
-  section.side-by-side {
-      .image {
-          height: 480px;
-          background: url(trailer-base.jpg) center center no-repeat;
-          background-size: contain;
-      }
-
-	}
+    }
 
     section.history {
+        .carousel-inner {
+            background: #dddddd;
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            &[data-index="0"] {
+                .image:nth-child(1) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="1"] {
+                .image:nth-child(2) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="2"] {
+                .image:nth-child(3) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="3"] {
+                .image:nth-child(4) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="4"] {
+                .image:nth-child(5) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="5"] {
+                .image:nth-child(6) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="6"] {
+                .image:nth-child(7) {
+                    opacity: 1;
+                }
+            }
+            &[data-index="7"] {
+                .image:nth-child(8) {
+                    opacity: 1;
+                }
+            }
+        }
+        .image {
+            @include absolute(0,0,0,0);
+            opacity: 0;
+            transition: opacity 1s linear;
+        }
         .timeline-item {
-            &.exterior-before .image {
+            .image-exterior-before {
                 background: url(IMG_0497.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.interior-before .image {
-                background: url(IMG_0156.jpg) center center no-repeat;
+            .image-exterior-before-1 {
+                background: url(IMG_0109.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.road-ready .image {
-                background: url(IMG_0567.jpg) center center no-repeat;
-                background-size: cover;
-                height: 600px;
-            }
-            &.tear-down .image {
-                background: url(IMG_0318.jpg) center center no-repeat;
+            .image-exterior-before-2 {
+                background: url(IMG_0154.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.foundation .image {
-                background: url(IMG_0258.jpg) center center no-repeat;
-                height: 600px;
+            .image-interior-before {
+                background: url(IMG_0262.jpg) center center no-repeat;
+                //height: 600px;
                 background-size: cover;
             }
-            &.wheelwell .image {
+            .image-interior-before-1 {
+                background: url(IMG_0438.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-road-ready {
+                background: url(IMG_0263.jpg) center center no-repeat;
+                background-size: cover;
+                //height: 600px;
+            }
+            .image-road-ready-1 {
+                background: url(IMG_0362.jpg) center center no-repeat;
+                background-size: cover;
+                //height: 600px;
+            }
+            .image-road-ready-2 {
+                background: url(IMG_0359.jpg) center center no-repeat;
+                background-size: cover;
+                //height: 600px;
+            }
+            .image-tear-down {
+                background: url(IMG_0271.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-tear-down-1 {
+                background: url(IMG_0644.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-tear-down-2 {
+                background: url(IMG_0275.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-foundation {
+                background: url(IMG_0569.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-foundation-1 {
+                background: url(IMG_0474.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: contain;
+            }
+            .image-wheelwell {
+                background: url(IMG_0375.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-wheelwell-1 {
                 background: url(IMG_0141.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.reinforce .image {
-                background: url(IMG_0579.jpg) center center no-repeat;
+            .image-wheelwell-2 {
+                background: url(IMG_0083.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.wall-rebuild .image {
+            .image-reinforce {
+                background: url(IMG_0396.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-reinforce-1 {
+                background: url(IMG_0223.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-wall-rebuild {
+                background: url(IMG_0235.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-wall-rebuild-1 {
+                background: url(IMG_0538.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-wall-rebuild-2 {
                 background: url(IMG_0107.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.roof-rebuild .image {
-                background: url(IMG_0513.jpg) center center no-repeat;
+            .image-roof-rebuild {
+                background: url(IMG_0532.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.cabinets .image {
-                background: url(IMG_0240.jpg) center center no-repeat;
-                height: 600px;
+            .image-roof-rebuild-1 {
+                background: url(IMG_0398.jpg) center center no-repeat;
+                //height: 600px;
                 background-size: cover;
             }
-            &.interior-paint .image {
+            .image-roof-rebuild-2 {
+                background: url(IMG_0488.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-roof-rebuild-3 {
+                background: url(IMG_0005.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-cabinets {
+                background: url(IMG_0456.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-cabinets-1 {
+                background: url(IMG_0284.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-cabinets-2 {
                 background: url(IMG_0314.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.electrical .image {
-                background: url(IMG_0201.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.flooring .image {
-                background: url(IMG_0030.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.windows .image {
-                background: url(IMG_0152.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.counter-tops .image {
-                background: url(IMG_0099.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.insulation .image {
-                background: url(IMG_0661.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.tounge-box .image {
-                background: url(IMG_0037.jpg) center center no-repeat;
-                //height: 600px;
-                background-size: cover;
-            }
-            &.storage .image {
+            .image-interior-paint {
                 background: url(IMG_0118.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.polish .image {
+            .image-interior-paint-1 {
+                background: url(IMG_0228.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-electrical {
+                background: url(IMG_0028.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-electrical-1 {
+                background: url(IMG_0132.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-electrical-2 {
+                background: url(IMG_0201.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-flooring {
+                background: url(IMG_0219.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-flooring-1 {
+                background: url(IMG_0126.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-flooring-2 {
+                background: url(IMG_0238.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-windows {
+                background: url(IMG_0089.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-windows-1 {
+                background: url(IMG_0609.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-counter-tops {
+                background: url(IMG_0099.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-counter-tops-1 {
+                background: url(IMG_0123.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-insulation {
+                background: url(IMG_0250.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-insulation-1 {
+                background: url(IMG_0604.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-tounge-box {
+                background: url(IMG_0301.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-tounge-box-1 {
+                background: url(IMG_0188.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-tounge-box-2 {
+                background: url(IMG_0543.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-storage {
+                background: url(IMG_0118.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-storage-1 {
+                background: url(IMG_0439.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-polish {
                 background: url(IMG_0512.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.details .image {
+            .image-polish-1 {
+                background: url(IMG_0312.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-details {
                 background: url(IMG_0594.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.door .image {
-                background: url(IMG_0598.jpg) center center no-repeat;
-                height: 600px;
+            .image-details-1 {
+                background: url(IMG_0232.jpg) center center no-repeat;
+                //height: 600px;
                 background-size: cover;
             }
-            &.taillights .image {
+            .image-details-2 {
+                background: url(IMG_0019.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-details-3 {
+                background: url(IMG_0470.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-details-4 {
+                background: url(IMG_0248.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-door {
+                background: url(IMG_0346.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-door-1 {
+                background: url(IMG_0558.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-door-2 {
+                background: url(IMG_0506.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: contain;
+            }
+            .image-door-3 {
+                background: url(IMG_0573.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-taillights {
+                background: url(IMG_0011.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-taillights-1 {
+                background: url(IMG_0455.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-taillights-2 {
                 background: url(IMG_0410.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }
-            &.testrun .image {
+            .image-testrun {
                 background: url(IMG_0430.jpg) center center no-repeat;
+                //height: 600px;
+                background-size: cover;
+            }
+            .image-testrun-1 {
+                background: url(IMG_0163.jpg) center center no-repeat;
                 //height: 600px;
                 background-size: cover;
             }

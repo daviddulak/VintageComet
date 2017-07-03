@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
+import {Helmet} from "react-helmet";
 
 @inject("store")
 @observer
@@ -17,6 +18,10 @@ export default class History extends Component {
 		const store = this.store;
 		return (
 			<div className="page history">
+				<Helmet>
+					<title>Vintage 1953 Comet Trailer History</title>
+					<meta name="description" content="This the history of our vintage camper and the Comet Trailer company." />
+				</Helmet>
 				<header>
 					<div className="hero-unit">
 						<h1>History</h1>

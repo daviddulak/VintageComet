@@ -3,7 +3,7 @@ import { inject, observer } from "mobx-react";
 import { Link, withRouter } from "react-router-dom";
 
 import TopNav from "./TopNav";
-import Button from "./ui/Button";
+import Button from "./Button";
 
 @withRouter
 @inject("store")
@@ -26,10 +26,6 @@ export default class TopBar extends Component {
 			<div className="topbar">
 				<div className="logo"></div>
 				<TopNav location={this.props.location} />
-				{/*<Button
-					onClick={this.authenticate.bind(this)}
-					title={authenticated ? "Log out" : "Sign in"}
-				/>*/}
 			</div>
 		);
 	}

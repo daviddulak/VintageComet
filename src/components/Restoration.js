@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
+import Carousel from "./ui/Carousel";
+import {Helmet} from "react-helmet";
 
 @inject("store")
 @observer
@@ -17,6 +19,10 @@ export default class Restoration extends Component {
 		const store = this.store;
 		return (
 			<div className="page restoration">
+				<Helmet>
+					<title>Vintage 1953 Comet Trailer Restoration</title>
+					<meta name="description" content="A story of the restoration process of our vintage camper." />
+				</Helmet>
 				<header>
 					<div className="hero-unit">
 						<h1>Restoration</h1>
@@ -47,27 +53,6 @@ export default class Restoration extends Component {
 						</div>
 					</section>
 
-					{/*<section className="gallery">
-						<div className="inner">
-							<div className="image image-01"></div>
-						</div>
-					</section>
-
-					<section className="side-by-side">
-						<div className="inner">
-							<div className="content">
-								<h3>Back to square one</h3>
-								<p>
-									Our restoration project became a complete rebuild.  The water damage was mostly focused 
-									on the ceiling and the lower corners where the walls meet the floor.  We decided the best 
-									route was to remove all the aluminum and remove the walls.  We took the trailer structure 
-									and floor to a shop that sand blasted it and enamel coated.
-								</p>
-							</div>
-							<div className="image"></div>
-						</div>
-					</section>*/}
-
 
 					<section className="history">
 						<div className="inner">
@@ -76,37 +61,49 @@ export default class Restoration extends Component {
 								Restoration
 							</div>
 
-							<div className="timeline-item item-01 left-item exterior-before">
+							<div className="timeline-item first left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-exterior-before"></div>
+										<div className="image image-exterior-before-1"></div>
+										<div className="image image-exterior-before-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Exterior Before
 										</div>
 										<div className="description">
-											Here is a shot of the exterior before we started the project.
+											The exterior had a rough look at the beginning.  It had been 
+											painted with galvanized paint and tar was used to prevent leaks.
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="timeline-item right-item interior-before">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-interior-before"></div>
+										<div className="image image-interior-before-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Interior Before
 										</div>
 										<div className="description">
-											Here is a shot of the interior before we started the project.
+											The interior had evidence of leaks rotting around the windows and roof.
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="timeline-item left-item road-ready">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-road-ready"></div>
+										<div className="image image-road-ready-1"></div>
+										<div className="image image-road-ready-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Getting Road Ready
@@ -118,24 +115,31 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item tear-down">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-tear-down"></div>
+										<div className="image image-tear-down-1"></div>
+										<div className="image image-tear-down-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Tear Down
 										</div>
 										<div className="description">
 											The floor was intact, but the walls in the lower corners 
-											and all the roof cross beams had major rot.
+											and all the roof cross beams had major rot so we tore the tariler down to the base.
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="timeline-item left-item foundation">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-foundation"></div>
+										<div className="image image-foundation-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Foundation
@@ -148,9 +152,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item reinforce">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-reinforce"></div>
+										<div className="image image-reinforce-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Reinforce
@@ -162,9 +169,13 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item wheelwell">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-wheelwell"></div>
+										<div className="image image-wheelwell-1"></div>
+										<div className="image image-wheelwell-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Wheel Well
@@ -177,9 +188,13 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item wall-rebuild">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-wall-rebuild"></div>
+										<div className="image image-wall-rebuild-1"></div>
+										<div className="image image-wall-rebuild-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Wall Rebuild
@@ -192,24 +207,33 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item roof-rebuild">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-roof-rebuild"></div>
+										<div className="image image-roof-rebuild-1"></div>
+										<div className="image image-roof-rebuild-2"></div>
+										<div className="image image-roof-rebuild-3"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Roof Rebuild
 										</div>
 										<div className="description">
-											After reattaching the walls and installing the cross beams, we had to bend the 
+											After reattaching the walls and installing the cross beams, we had to bend the new 
 											plywood over the curve.
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="timeline-item right-item cabinets">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-cabinets"></div>
+										<div className="image image-cabinets-1"></div>
+										<div className="image image-cabinets-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Cabinets
@@ -222,23 +246,31 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item interior-paint">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-interior-paint"></div>
+										<div className="image image-interior-paint-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Interior Paint
 										</div>
 										<div className="description">
 											Since rot is our biggest enemy we over did it with layers of protection.
+											And of course we finished it off with a beautiful selection of colors.
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="timeline-item right-item electrical">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-electrical"></div>
+										<div className="image image-electrical-1"></div>
+										<div className="image image-electrical-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Electrical
@@ -251,9 +283,13 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item flooring">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-flooring"></div>
+										<div className="image image-flooring-1"></div>
+										<div className="image image-flooring-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Flooring
@@ -266,9 +302,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item windows">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-windows"></div>
+										<div className="image image-windows-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Windows
@@ -281,9 +320,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item counter-tops">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-counter-tops"></div>
+										<div className="image image-counter-tops-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Counter Tops
@@ -296,9 +338,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item insulation">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-insulation"></div>
+										<div className="image image-insulation-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Insulation
@@ -311,9 +356,13 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item tounge-box">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-tounge-box"></div>
+										<div className="image image-tounge-box-1"></div>
+										<div className="image image-tounge-box-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Storage Box
@@ -326,9 +375,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item storage">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-storage"></div>
+										<div className="image image-storage-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Storage
@@ -340,9 +392,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item polish">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-polish"></div>
+										<div className="image image-polish-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Polish
@@ -355,9 +410,15 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item details">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-details"></div>
+										<div className="image image-details-1"></div>
+										<div className="image image-details-2"></div>
+										<div className="image image-details-3"></div>
+										<div className="image image-details-4"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Details
@@ -369,9 +430,14 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item door">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-door"></div>
+										<div className="image image-door-1"></div>
+										<div className="image image-door-2"></div>
+										<div className="image image-door-3"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Door Rebuild
@@ -383,9 +449,13 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item right-item taillights">
+							<div className="timeline-item right-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-taillights"></div>
+										<div className="image image-taillights-1"></div>
+										<div className="image image-taillights-2"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Tail Lights
@@ -397,9 +467,12 @@ export default class Restoration extends Component {
 								</div>
 							</div>
 
-							<div className="timeline-item left-item testrun">
+							<div className="timeline-item left-item">
 								<div className="item-inner">
-									<div className="image"></div>
+									<Carousel>
+										<div className="image image-testrun"></div>
+										<div className="image image-testrun-1"></div>
+									</Carousel>
 									<div className="content">
 										<div className="title">
 											Test Run

@@ -4,7 +4,7 @@ import { inject, observer } from "mobx-react";
 import LazyRoute from "lazy-route";
 import DevTools from "mobx-react-devtools";
 
-import TopBar from "./TopBar";
+import TopBar from "./ui/TopBar";
 
 @inject("store")
 @observer
@@ -61,13 +61,7 @@ export default class App extends Component {
 						<LazyRoute {...props} component={import("./Travel")} />
 					)}
 				/>
-				<Route
-					exact
-					path="/login"
-					render={props => (
-						<LazyRoute {...props} component={import("./Login")} />
-					)}
-				/>
+
 				<footer>
 					{/*<div className="social">
 						<h4>Follow the conversation</h4>
