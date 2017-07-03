@@ -73,7 +73,11 @@ export default class App extends Component {
 						<button className="contact">Email us</button>
 					</div>*/}
 					<div className="fineprint">
-						© 2016 Clementine the Camper. All Rights Reserved.
+						<p>
+							If you know more history of the Comet Trailer 
+							company or have questions, <a href="mailto:redskycreative@gmail.com?subject=CometTrailer">email us</a>.
+						</p>
+						<p>© 2016 Clementine the Camper. All Rights Reserved.</p>
 					</div>
 				</footer>
 			</div>

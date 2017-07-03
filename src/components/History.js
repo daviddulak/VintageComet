@@ -45,9 +45,12 @@ export default class History extends Component {
 								business building campers from high grade aluminum excess.  Around 1956 Comet moved to Coffeyville, 
 								Kansas with a much larger facility and started producing at a much higher rate.  They built trailers 
 								until 1981 when economics caused the company to shutter it's doors.
-
+							</p>
+							<p>
 								Comet campers built between 1947 and 1956 are extremely rare.  Very few were made, and very few survived 
 								since they were wood framed and many fell victim to water damage. 
+								If you know more history of the Comet Trailer 
+								company or have questions, <a href="mailto:redskycreative@gmail.com?subject=CometTrailer">email us</a>.
 							</p>
 						</div>
 					</section>
